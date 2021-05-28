@@ -56,6 +56,11 @@ class LoginForm extends Component {
         this.setState({account});
     };
 
+    handleChangeRoute = () => {
+        this.props.history.push('/');
+        window.location.reload();
+    };
+
     render() {
         return (
             <div>
